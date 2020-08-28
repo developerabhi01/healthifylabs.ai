@@ -1,0 +1,25 @@
+{
+    "company": null,
+    "countryCodeAlpha2": "DE",
+    "countryCodeAlpha3": "DEU",
+    "countryCodeNumeric": "276",
+    "countryName": "Germany",
+    "createdAt": {
+        "date": "2020-01-27 11:27:06.000000",
+        "timezone": "UTC",
+        "timezone_type": 3
+    },
+    "customerId": "95d2c644ee93274dd9e877b9b31d6b6b",
+    "extendedAddress": null,
+    "firstName": "John",
+    "lastName": "Doe",
+    "locality": "Bielefeld",
+    "postalCode": "33602",
+    "region": null,
+    "streetAddress": "Obernstra\u00dfe 50",
+    "updatedAt": {
+        "date": "2020-01-27 11:27:06.000000",
+        "timezone": "UTC",
+        "timezone_type": 3
+    }
+}

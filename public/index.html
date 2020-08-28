@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+* UCAccord ERP 
+* @version v1.0.0-beta.1
+* @link https://upsidecloudtechnologies.com/
+* Copyright (c) 2020 Upside Cloud Technologies
+* License MIT
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="UCT for React ERP">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,CSS,SCSS,HTML,RWD,Dashboard,React">
+    <title>UCAccord - Upside Cloud Technologies</title>
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  
+    <!-- <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  /> -->
+    <!-- <link href="https://uploads-ssl.webflow.com/5dfb57f1c52dfd62246e2e9c/5dfb99e9b07418646a4cd05e_circuly.io%20circle%20klein.png" rel="shortcut icon" type="image/x-icon"> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    
+  <script src="./bootstrap/js/jquery.js"></script>
+  <script src="./bootstrap/js/bootstrapmin.js"></script>
+  <script src="./bootstrap/js/poppermin.js"></script>
+
+  <!-- <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script> -->
+<!-- 
+  <script
+  src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+  <script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script> -->
+
+  <script>var Alert = ReactBootstrap.Alert;</script>
+
+  
+  <!-- <script src="./bootstrap/js/update_table.js"></script> -->
+
+  <script>
+  $(document).ready(function(){
+    // Activate tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+    
+    // Select/Deselect checkboxes
+    var checkbox = $('table tbody input[type="checkbox"]');
+    $("#selectAll").click(function(){
+      if(this.checked){
+        checkbox.each(function(){
+          this.checked = true;                        
+        });
+      } else{
+        checkbox.each(function(){
+          this.checked = false;                        
+        });
+      } 
+    });
+    checkbox.click(function(){
+      if(!this.checked){
+        $("#selectAll").prop("checked", false);
+      }
+    });
+  });
+  </script>
+    
+
+  </body>
+</html>
